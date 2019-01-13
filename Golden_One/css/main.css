@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    background: url(../img/first-bg.jpg) no-repeat center top / cover;
+    padding-bottom: 160px;
+}
+
+.container {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 41px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+.menu {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    margin-top: 45px;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 41px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.titles__first {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 180px;
+}
+
+h1 {
+    font-size: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+.button {
+    background: #fed136;
+    color: #484543;
+    border-radius: 3px;
+    display: block;
+    width: 240px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.title {
+    padding-top: 115px;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title p {
+    color: #777777;
+    text-align: center;
+    font-size: 16px;
+}
+
+#services {
+    padding-bottom: 120px;
+}
+
+.services, .works {
+ margin-top: 70px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.services__item {
+    text-align: center;
+}
+
+.services__item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.services__item p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.55em;
+}
+
+#portfolio {
+    background: #f7f7f7;
+    padding-bottom: 120px;
+}
+
+.about {
+    margin-top: 70px;
+}
+
+.about__item {
+    display: flex;
+    margin-top: 90px;
+}
+
+.descripton__left {
+    text-align: right;
+}
+
+.descripton__right {
+    text-align: left;
+}
+
+.descripton__left, .descripton__right {
+    max-width: 280px;
+}
+
+.about h3 {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about h4 {
+    margin: 10px 0px 20px 0px;
+}
+
+.about p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.55em;
+}
+
+.about__item .image {
+    margin: 0px 40px;
+}
+
+#about {
+    padding-bottom: 120px;
+}
+
+.copyright {
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+}
+
+.copyright a {  
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 120px;
+}
