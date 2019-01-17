@@ -132,10 +132,21 @@ h1 {
 }
 
 .about {
-    margin-top: 70px;
+    margin: 70px auto 0 auto;
+    display: table;
+    width: 827px;
+}
+
+.lft {
+    float: left;
+}
+
+.rgh {
+    float: right;
 }
 
 .about__item {
+    
     display: flex;
     margin-top: 90px;
 }
