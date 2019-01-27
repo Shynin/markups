@@ -8,6 +8,13 @@ body {
     color: #222222;
 }
 
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
 div {
     box-sizing: border-box;
 }
