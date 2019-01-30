@@ -1,5 +1,7 @@
 @import "blocks/nav.css";
 @import "blocks/header.css";
+@import "blocks/videos.css";
+@import "blocks/instructors.css";
 
 
 * {
@@ -9,4 +11,14 @@
 
 body {
     font-family: 'Lato', sans-serif;
+}
+
+
+@media (min-width: 640px) {
+
+}
+
+
+@media (min-width: 1460px) {
+
 }
