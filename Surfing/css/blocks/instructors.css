@@ -1,5 +1,6 @@
 .instructors {
     text-align: center;
+    padding-bottom: 80px;
 }
 
 h2 {
@@ -17,11 +18,8 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
+    max-width: 1050px;
     margin: 0 auto;
-}
-
-.instructors {
-    padding-bottom: 250px;
 }
 
 .instructor__item:nth-of-type(2) {
@@ -65,18 +63,14 @@ h2 {
         margin: 0 10px;
     }
 
-    .instructor__item img {
-        max-width: 100%;
-    }
-
     h2 {
         margin-bottom: 95px;
     }
 }
 
 
-@media (min-width: 1460px) {
-    .container {
-        width: 1050px;
+@media (min-width: 1200px) {
+    .instructors {
+        padding-bottom: 250px;
     }
 }

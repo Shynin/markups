@@ -6,10 +6,6 @@
     padding-right: 20px;
 }
 
-.video img {
-    max-width: 100%;
-}
-
 .videos__wrapper {
     display: flex;
     flex-direction: column;

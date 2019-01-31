@@ -1,0 +1,96 @@
+.interest {
+    width: 100%;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.interest h2 {
+    margin-bottom: 70px;
+}
+
+.interest a {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    padding: 18px 45px ;
+    line-height: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.interest a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+footer {
+    border-top: 1px solid #f2ede7;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.footer__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer__title {
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.footer__copyright {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.footer__designed {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+strong {
+    color: black;
+    font-weight: 600;
+}
+
+
+@media (min-width: 640px) {
+    .interest {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer__container {
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .interest {
+        padding-bottom: 150px;
+    }
+
+    footer {
+        padding: 48px 0 38px;
+    }
+}

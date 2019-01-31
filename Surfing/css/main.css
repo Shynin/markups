@@ -2,6 +2,8 @@
 @import "blocks/header.css";
 @import "blocks/videos.css";
 @import "blocks/instructors.css";
+@import "blocks/blogs.css";
+@import "blocks/footer.css";
 
 
 * {
@@ -13,6 +15,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
 
 @media (min-width: 640px) {
 
