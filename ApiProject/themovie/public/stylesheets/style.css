@@ -5,13 +5,14 @@
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: black;
+  color: rgb(223, 222, 166);
   padding: 0 20px;
+  background-image: url(../images/bg.jpg);
 }
 
 p {
   font-size: 15px;
-  color: black;
+  color: rgb(216, 179, 123);
   font-weight: bold;
   text-align: center;
 }
@@ -41,7 +42,7 @@ input {
 	flex-direction: row;
 	justify-content: space-between;
 	display: flex;
-	width: 100%;
+	max-width: 1210px;
 	margin: auto;
 }
 
