@@ -38,24 +38,28 @@
 // });
 
 
-var listElm = document.querySelector('.movie-item');
+// var listElm = document.querySelector('.movie-item');
 
-// Add 20 items.
-var nextItem = 1;
-var loadMore = function() {
-  for (var i = 0; i < 20; i++) {
-    var item = document.createElement('div');
-    item.innerText = 'Item ' + nextItem++;
-    listElm.appendChild(item);
-  }
-}
+// // Add 20 items.
+// var nextItem = 1;
+// var loadMore = function() {
+// // request('https://api.themoviedb.org/3/discover/movie?api_key=f981cff44272509c2bd87ca71cdc774f&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2', function (error, response, body) {
+//   if (!error && response.statusCode == 200) {
+//     var moviesArray = JSON.parse(body).results;
+//     var elem = partials/movie-card(moviesarray);
+//     $(".movies-container").append(elem);
+//   }
+// });
+// }
 
-// Detect when scrolled to bottom.
-listElm.addEventListener('scroll', function() {
-  if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
-    loadMore();
-  }
-});
+// // Detect when scrolled to bottom.
+// listElm.addEventListener('scroll', function() {
+//   if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
+//     loadMore();
+//   }
+// });
 
-// Initially load some items.
-loadMore();
+// // Initially load some items.
+// loadMore();
+
+$("body").css({"background-image": "none"});
