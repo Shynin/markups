@@ -50,7 +50,63 @@ input {
   color: rgb(149, 187, 202);
   border: 1px solid rgb(88, 107, 131);
   border-radius: 4px;
-  max-width: 220px;
+  max-width: 200px;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.movie-item:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px rgb(226, 181, 181);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a.buttons {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: 5px;
+  outline: none;
+  border: 1px solid;
+  border-radius: 4px;
+  transition: 0.2s;
+} 
+
+a.buttons:hover { background: rgba(255,255,255,.2); }
+a.buttons:active { background: white; }
+
+.pagination {
+  display: grid;
+  padding-bottom: 50px;
+}
+
+.pagination-wrapper {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.pagination-wrapper a {
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: rgb(94, 206, 206);
+}
+
+.active {
+  background-color: #4caf50;
+  border: 1px solid #4caf50;
+  color: white;
+}
+
+
+
+.pagination-wrapper a:hover:not(.active) {
+  background-color: #ddd;
 }
