@@ -3,7 +3,8 @@ body {
     color: #5c6369;
 }
 
-ul, li {
+ul,
+li {
     display: block;
     padding: 0;
     margin: 0;
@@ -13,7 +14,12 @@ p {
     line-height: 1.8 em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #14141d;
@@ -33,8 +39,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta {
-    font-weight: 700; 
-    background: #fea100; 
+    font-weight: 700;
+    background: #fea100;
     color: #fff;
     font-size: 14px;
     border-radius: 5px;
@@ -58,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 21px;
     height: 17px;
     display: block;
-    margin-right: 13px; 
-} 
+    margin-right: 13px;
+}
 
 .main-header {
     padding: 24px 0;
@@ -70,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title {
-    padding: 215px 0 ;
+    padding: 215px 0;
 }
 
 .title__heading {
@@ -96,10 +102,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px 0;
 }
 
-/* .phone {
-
-} */
-
 .phone__text {
     background: url("../img/phone.png") no-repeat left center;
     color: #14141d;
@@ -117,13 +119,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -4px;
     display: block;
 }
+
 .phone__number {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 700;
     color: #14141d;
-    margin-left: 42px; 
-    margin-top: -5px; 
+    margin-left: 42px;
+    margin-top: -5px;
 }
 
 .history {
@@ -148,16 +151,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 65px 0 100px;
 }
 
-/* .food-images {
-
-} */
-
 .food-images__item {
     margin-bottom: 10px;
 }
 
 .food-images-down {
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .special {
@@ -168,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 .special-title {
     font-size: 35px;
     color: #fff;
-    text-align: center; 
+    text-align: center;
 }
 
 .food {
@@ -206,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     width: 78px;
     border-right: 1px solid #e1e1e1;
-    margin-right: 18px ;
+    margin-right: 18px;
 }
 
 .food__del span {
@@ -232,19 +231,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 72px 106px;
 }
 
-/* .socials {
-     
-} */
-
 .socials__item {
     width: 52px;
     height: 52px;
     border-radius: 50%;
     display: block;
+    cursor: pointer;
 }
 
 .socials__item_fb {
-     background: #3b5998 url("../img/fb.png") no-repeat center center;
+    background: #3b5998 url("../img/fb.png") no-repeat center center;
 }
 
 .socials__item_tw {
@@ -261,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 1px;
     margin-top: 57px;
 }
+
 .credits {
     text-align: center;
     margin-top: 47px;
@@ -295,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: -200px;
     margin-top: -100px;
     border-radius: 10px;
-    box-shadow: 0 0 50px black; 
+    box-shadow: 0 0 50px black;
 }
 
 .show {

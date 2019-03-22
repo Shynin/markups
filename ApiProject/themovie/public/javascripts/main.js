@@ -1,3 +1,13 @@
+
+$(document).ready(function() {
+$("a .buttons").click(function(e) {
+    e.preventDefault();
+    $("a .buttons").removeClass('active');
+    $(this).addClass('active');
+  })
+})
+
+
 // $("#input_search").on("intput", function(e){
 //     //очистить плитку
 //     $.get(\\api\find\, function(data){
@@ -61,5 +71,3 @@
 
 // // Initially load some items.
 // loadMore();
-
-$("body").css({"background-image": "none"});
