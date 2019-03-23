@@ -1,0 +1,63 @@
+@import "blocks/navbar.css";
+@import "blocks/header.css";
+@import "blocks/services.css";
+@import "blocks/clients.css";
+@import "blocks/team.css";
+@import "blocks/footer.css";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Abel;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    /* scroll-behavior: smooth; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    position: relative;
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px solid #c2c2c291;
+}
+
+section:before {
+    content: "";
+    border: 0;
+    font-size: 20px;
+    height: 20px;
+    color: #c2c2c2;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 0px 21px 0px 16px;
+    position: absolute;
+    top: -12px;
+}
+
+section#services:before {
+    content: "Our services";
+}
+
+section#clients:before {
+    content: "Our clients";
+}
+
+section#team:before {
+    content: "Our team";
+}

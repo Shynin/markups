@@ -1,0 +1,32 @@
+.team {
+    justify-content: left;
+}
+
+.team-item {
+    display: flex;
+    width: 30%;
+    padding-bottom: 60px;
+}
+
+.team-item_img {
+    width: 161px;
+    display: flex;
+    justify-content: center;
+    /* пересмотреть */
+}
+
+.team-item_desc {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-item_desc__name {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.team-item_desc__pos {
+    font-size: 14px;
+    color: #b2b2b2;
+}

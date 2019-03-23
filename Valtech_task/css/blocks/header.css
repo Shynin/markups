@@ -1,0 +1,33 @@
+header {
+    max-width: 1200px;
+    margin: 70px auto 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 58px;
+}
+
+h2 {
+    padding-top: 84px;
+    font-size: 33px;
+    line-height: 57px;
+    color: #4f4f4f;
+    margin-bottom: 140px;
+}
+
+header a {
+    background: #00C8FF;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    padding: 13px 51px;
+    box-shadow: 0 3px 6px 1px grey;
+}
+
+header a:hover {
+    background: white;
+    color: #00C8FF;
+    box-shadow: inset 0 0 20px 2px #00C8FF;
+    transition: background 200ms ease-out, color 200ms linear;
+}

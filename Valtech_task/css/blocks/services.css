@@ -1,0 +1,32 @@
+.services {
+    justify-content: left;
+}
+
+.services-item {
+    display: flex;
+    width: 50%;
+    padding-bottom: 70px;
+}
+
+.services-item_img {
+    width: 161px;
+    display: flex;
+    justify-content: center;
+    /* пересмотреть */
+}
+
+.services-item_text {
+    width: 300px;
+}
+
+.services-item_text__title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.services-item_text__desc {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #b2b2b2;
+}

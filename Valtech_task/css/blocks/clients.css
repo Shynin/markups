@@ -1,0 +1,25 @@
+.clients {}
+
+.clients-item {
+    text-align: center;
+    width: 20%;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.clients-item:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.clients-item:hover::before {
+    width: 100%;
+}

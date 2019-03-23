@@ -1,0 +1,15 @@
+footer {
+    height: 100px;
+    background-color: #f7f7f7;
+    width: 100%;
+    display: flex;
+}
+
+.social-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons a {
+    margin-left: 40px;
+}

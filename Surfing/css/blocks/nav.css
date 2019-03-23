@@ -27,11 +27,11 @@
     margin-right: 0;
 }
 
-.nav__item:hover, .nav__item:active {
+.nav__item:hover,
+.nav__item:active {
     color: black;
     font-weight: 600;
 }
-
 
 @media (min-width: 640px) {
     .nav {
@@ -43,7 +43,6 @@
         margin-bottom: 100px;
     }
 }
-
 
 @media (min-width: 1460px) {
     .nav-wrapper {
