@@ -5,6 +5,15 @@ footer {
     display: flex;
 }
 
+footer a {
+    display: flex;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
 .social-buttons {
     display: flex;
     align-items: center;
@@ -12,4 +21,14 @@ footer {
 
 .social-buttons a {
     margin-left: 40px;
+}
+
+.social-buttons a:first-child {
+    margin-left: 0px;
+}
+
+@media (max-width: 450px) {
+    footer .container {
+        justify-content: center;
+    }
 }

@@ -14,26 +14,72 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function() {
-    // Add smooth scrolling to all links
     $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-            // Prevent default anchor click behavior
             event.preventDefault();
-
-            // Store hash
             var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function() {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
-        } // End if
+        } else {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 800)
+        }
     });
+
+    if ($(window).width() < 987) {
+        startCarousel();
+    } else {
+        $('.owl-carousel').addClass('off');
+    }
 });
+
+$(window).resize(function() {
+    if ($(window).width() < 987) {
+        startCarousel();
+    } else {
+        stopCarousel();
+    }
+});
+
+function startCarousel() {
+    $(".services-carousel").owlCarousel({
+        responsive: {
+            0: {
+                items: 1
+            },
+            670: {
+                items: 2
+            },
+        }
+    });
+    $(".clients-carousel").owlCarousel({
+        responsive: {
+            0: {
+                items: 3
+            },
+            670: {
+                items: 4
+            },
+            990: {
+                items: 6
+            },
+        }
+    });
+    $(".team-carousel").owlCarousel({
+        responsive: {
+            0: {
+                items: 3
+            },
+        }
+    });
+}
+
+function stopCarousel() {
+    var owl = $('.owl-carousel');
+    owl.trigger('destroy.owl.carousel');
+    owl.addClass('off');
+}

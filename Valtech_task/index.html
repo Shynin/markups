@@ -2,167 +2,188 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shynin_Test_Task</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 </head>
 
 <body>
     <nav id="navbar">
         <div class="container">
             <a href="#"><img src="css/img/logo.svg" alt="Valtech logo"></a>
-            <div class="nav-buttons">
+            <!-- burger menu -->
+            <label class="hamburger" for="nav-toggle"></label>
+            <input id="nav-toggle" type="checkbox" class="hidden" />
+            <div class="nav">
+                <ul>
+                    <li><a href="#services" title="Services">Services</a></li>
+                    <li><a href="#clients" title="Clients">Clients</a></li>
+                    <li><a href="#team" title="Our team">Our team</a></li>
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- burger menu end -->
+
+            <!-- <div class="nav-buttons">
                 <a href="#services" title="Services" class="nav-buttons_item">Services</a>
                 <a href="#clients" title="Clients" class="nav-buttons_item">Clients</a>
                 <a href="#team" title="Our team" class="nav-buttons_item">Our team</a>
                 <a href="#" title="Contact Us" class="nav-buttons_item">Contact Us</a>
-            </div>
+            </div> -->
         </div>
     </nav>
     <header>
         <h1>We're an international development agency.</h1>
         <h2>We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences.</h2>
-        <a href="#">Contact Us</a>
+        <div class="contact"><a href="#">Contact Us</a></div>
     </header>
     <main>
         <hr>
         <section id="services" class="services container ">
-            <a href="#" class="services-item" title="Mobile Development">
-                <div class="services-item_img">
-                    <img src="css/img/services/smartphone.svg" alt="Mobile Development">
-                </div>
-                <div class="services-item_text">
-                    <div class="services-item_text__title">Mobile Development</div>
-                    <div class="services-item_text__desc">We develop mobile apps for all contemporary mobile platforms. Mamon team builds native and cross-platform solutions.</div>
-                </div>
-            </a>
-            <a href="#" class="services-item" title="Web Development">
-                <div class="services-item_img">
-                    <img src="css/img/services/monitor.svg" alt="Web Development">
-                </div>
-                <div class="services-item_text">
-                    <div class="services-item_text__title">Web Development</div>
-                    <div class="services-item_text__desc">Mamon offers full range of services from various CMS and frameworks based websites to complex ERP/CRM solutions and e-commerce stores.</div>
-                </div>
-            </a>
-            <a href="#" class="services-item" title="Product Design">
-                <div class="services-item_img">
-                    <img src="css/img/services/layers.svg" alt="Product Design">
-                </div>
-                <div class="services-item_text">
-                    <div class="services-item_text__title">Product Design</div>
-                    <div class="services-item_text__desc">We create design given the product audience, goal, business domain, technology and the platform for the solution.</div>
-                </div>
-            </a>
-            <a href="#" class="services-item" title="Quality Assurance">
-                <div class="services-item_img">
-                    <img src="css/img/services/test.svg" alt="Quality Assurance">
-                </div>
-                <div class="services-item_text">
-                    <div class="services-item_text__title">Quality Assurance</div>
-                    <div class="services-item_text__desc">Our QA team ensures high standard of quality of products delivered.
+            <div class="owl-carousel owl-theme services-carousel">
+                <a href="#" class="services-item" title="Mobile Development">
+                    <div class="services-item_img">
+                        <img src="css/img/services/smartphone.svg" alt="Mobile Development">
                     </div>
-                </div>
-            </a>
+                    <div class="services-item_text">
+                        <div class="services-item_text__title">Mobile Development</div>
+                        <div class="services-item_text__desc">We develop mobile apps for all contemporary mobile platforms. Mamon team builds native and cross-platform solutions.</div>
+                    </div>
+                </a>
+                <a href="#" class="services-item" title="Web Development">
+                    <div class="services-item_img">
+                        <img src="css/img/services/monitor.svg" alt="Web Development">
+                    </div>
+                    <div class="services-item_text">
+                        <div class="services-item_text__title">Web Development</div>
+                        <div class="services-item_text__desc">Mamon offers full range of services from various CMS and frameworks based websites to complex ERP/CRM solutions and e-commerce stores.</div>
+                    </div>
+                </a>
+                <a href="#" class="services-item" title="Product Design">
+                    <div class="services-item_img">
+                        <img src="css/img/services/layers.svg" alt="Product Design">
+                    </div>
+                    <div class="services-item_text">
+                        <div class="services-item_text__title">Product Design</div>
+                        <div class="services-item_text__desc">We create design given the product audience, goal, business domain, technology and the platform for the solution.</div>
+                    </div>
+                </a>
+                <a href="#" class="services-item" title="Quality Assurance">
+                    <div class="services-item_img">
+                        <img src="css/img/services/test.svg" alt="Quality Assurance">
+                    </div>
+                    <div class="services-item_text">
+                        <div class="services-item_text__title">Quality Assurance</div>
+                        <div class="services-item_text__desc">Our QA team ensures high standard of quality of products delivered.
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
         <hr>
         <section id="clients" class="clients container">
-            <a href="https://www.lightspeed.com" class="clients-item"><img src="css/img/clients/1.svg" alt="lightspeed"></a>
-            <a href="https://trvl.com" class="clients-item"><img src="css/img/clients/2.svg" alt="trvl"></a>
-            <a href="https://www.spiderstrategies.com" class="clients-item"><img src="css/img/clients/3.svg" alt="spider strategies"></a>
-            <a href="https://www.tripadvisor.com" class="clients-item"><img src="css/img/clients/4.svg" alt="tripadvisor"></a>
-            <a href="https://www.shutterfly.com" class="clients-item"><img src="css/img/clients/5.svg" alt="shutterfly"></a>
-            <a href="https://www.decos.com" class="clients-item"><img src="css/img/clients/6.svg" alt="decos"></a>
-            <a href="https://www.tiqets.com" class="clients-item"><img src="css/img/clients/7.svg" alt="tiqets"></a>
-            <a href="https://www.hotelchamp.com" class="clients-item"><img src="css/img/clients/8.svg" alt="hotelchamp"></a>
-            <a href="https://www.flitsmeister.nl" class="clients-item"><img src="css/img/clients/9.svg" alt="flitsmeister"></a>
-            <a href="https://www.sap.com" class="clients-item"><img src="css/img/clients/10.svg" alt="sap"></a>
-            <a href="https://www.redkix.com" class="clients-item"><img src="css/img/clients/11.svg" alt="redkix"></a>
-            <a href="https://nos.nl" class="clients-item"><img src="css/img/clients/12.svg" alt="nos"></a>
+            <div class="owl-carousel owl-theme clients-carousel">
+                <a href="https://www.lightspeed.com" class="clients-item"><img src="css/img/clients/1.svg" alt="lightspeed"></a>
+                <a href="https://trvl.com" class="clients-item"><img src="css/img/clients/2.svg" alt="trvl"></a>
+                <a href="https://www.spiderstrategies.com" class="clients-item"><img src="css/img/clients/3.svg" alt="spider strategies"></a>
+                <a href="https://www.tripadvisor.com" class="clients-item"><img src="css/img/clients/4.svg" alt="tripadvisor"></a>
+                <a href="https://www.shutterfly.com" class="clients-item"><img src="css/img/clients/5.svg" alt="shutterfly"></a>
+                <a href="https://www.decos.com" class="clients-item"><img src="css/img/clients/6.svg" alt="decos"></a>
+                <a href="https://www.tiqets.com" class="clients-item"><img src="css/img/clients/7.svg" alt="tiqets"></a>
+                <a href="https://www.hotelchamp.com" class="clients-item"><img src="css/img/clients/8.svg" alt="hotelchamp"></a>
+                <a href="https://www.flitsmeister.nl" class="clients-item"><img src="css/img/clients/9.svg" alt="flitsmeister"></a>
+                <a href="https://www.sap.com" class="clients-item"><img src="css/img/clients/10.svg" alt="sap"></a>
+                <a href="https://www.redkix.com" class="clients-item"><img src="css/img/clients/11.svg" alt="redkix"></a>
+                <a href="https://nos.nl" class="clients-item"><img src="css/img/clients/12.svg" alt="nos"></a>
+            </div>
         </section>
         <hr>
         <section id="team" class="team container">
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/nina.svg" alt="">
+            <div class="owl-carousel owl-theme team-carousel">
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/nina.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Nina</div>
+                        <div class="team-item_desc__pos">Team Manager</div>
+                    </div>
                 </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Nina</div>
-                    <div class="team-item_desc__pos">Team Manager</div>
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/tizzy.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Tizzy</div>
+                        <div class="team-item_desc__pos">Front-end Developer</div>
+                    </div>
                 </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/tizzy.svg" alt="">
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/tom.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Tom</div>
+                        <div class="team-item_desc__pos">QA Automation</div>
+                    </div>
                 </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Tizzy</div>
-                    <div class="team-item_desc__pos">Front-end Developer</div>
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/alex.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Alex</div>
+                        <div class="team-item_desc__pos">Front-end Developer</div>
+                    </div>
                 </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/tom.svg" alt="">
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/thomas.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Thomas</div>
+                        <div class="team-item_desc__pos">Mobile Developer</div>
+                    </div>
                 </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Tom</div>
-                    <div class="team-item_desc__pos">QA Automation</div>
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/claire.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Claire</div>
+                        <div class="team-item_desc__pos">Back-end Developer</div>
+                    </div>
                 </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/alex.svg" alt="">
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/stiven.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Stiven</div>
+                        <div class="team-item_desc__pos">Back-end Developer</div>
+                    </div>
                 </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Alex</div>
-                    <div class="team-item_desc__pos">Front-end Developer</div>
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/anna-marie.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Anna-Marie</div>
+                        <div class="team-item_desc__pos">Product Designer</div>
+                    </div>
                 </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/thomas.svg" alt="">
-                </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Thomas</div>
-                    <div class="team-item_desc__pos">Mobile Developer</div>
-                </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/claire.svg" alt="">
-                </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Claire</div>
-                    <div class="team-item_desc__pos">Back-end Developer</div>
-                </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/stiven.svg" alt="">
-                </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Stiven</div>
-                    <div class="team-item_desc__pos">Back-end Developer</div>
-                </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/anna-marie.svg" alt="">
-                </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Anna-Marie</div>
-                    <div class="team-item_desc__pos">Product Designer</div>
-                </div>
-            </div>
-            <div class="team-item">
-                <div class="team-item_img">
-                    <img src="css/img/team/ernst.svg" alt="">
-                </div>
-                <div class="team-item_desc">
-                    <div class="team-item_desc__name">Ernst</div>
-                    <div class="team-item_desc__pos">Back-end Developer</div>
+                <div class="team-item">
+                    <div class="team-item_img">
+                        <img src="css/img/team/ernst.svg" alt="">
+                    </div>
+                    <div class="team-item_desc">
+                        <div class="team-item_desc__name">Ernst</div>
+                        <div class="team-item_desc__pos">Back-end Developer</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -179,6 +200,8 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -15,11 +15,13 @@
 }
 
 .container {
-    width: 1200px;
     margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 1200px;
 }
 
 section {
@@ -34,7 +36,7 @@ a {
 
 hr {
     border: 0;
-    border-bottom: 2px solid #c2c2c291;
+    border-bottom: 2px solid rgba(194, 194, 194, 0.6);
 }
 
 section:before {
@@ -60,4 +62,37 @@ section#clients:before {
 
 section#team:before {
     content: "Our team";
+}
+
+.off {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width:990px) and (max-width: 1216px) {
+    .container {
+        width: unset;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 990px) {
+    .container {
+        width: unset;
+    }
+    section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 670px) {
+    .container {
+        width: unset;
+    }
+    section {
+        padding: 50px 0;
+    }
+    section:before {
+        font-size: 15px;
+    }
 }
